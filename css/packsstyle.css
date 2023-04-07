@@ -1,0 +1,136 @@
+
+/* header */
+body {
+  background-color: var(--body-color);
+
+}
+
+.packImage {
+  margin: 0 auto 5rem;
+  width: 100%;
+  background: url(../images/nos-pack/packImage.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  cursor: context-menu;
+
+
+}
+
+.packImage .contenus {
+  text-align: center;
+}
+
+.packImage .contenus h3 {
+  color: transparent;
+  -webkit-text-stroke: .2rem var(--light-white);
+  font-size: 5vw;
+
+}
+
+.packImage .contenus p {
+  max-width:  90rem;
+  margin: 1rem auto;
+  font-size: 1.2vw;
+  color: #ffffffd2;
+  line-height: 2;
+  font-weight: bold;
+  text-transform: initial;
+  border-radius: 40%;
+}
+
+.packImage .contenus p:hover{
+  font-size: 1.4vw;
+}
+
+ul{
+  list-style: none;
+}
+
+
+.sous_head .para {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.sous_head .para h1 {
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.sous_head .para p {
+  color: var(--black);
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 1rem 15rem;
+  text-transform: initial;
+}
+
+.packs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+}
+
+.packs .box-container .box {
+  text-align: center;
+  background-color: var(--light-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  margin: 20px;
+}
+
+.packs .box-container .box:hover{
+  background: var(--del-rio);
+}
+
+.packs .box-container .box:hover .content h3{
+  color: var(--light-bg);
+}
+.packs .box-container .box:hover .content h2,
+.packs .box-container .box:hover .content ul>li{
+  color: var(--black);
+}
+
+.packs .box-container .box .image {
+  height: 40rem;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: .5rem;
+}
+
+.packs .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+
+}
+
+.packs .box-container .box .content{
+  padding: 1rem;
+}
+
+.packs .box-container .box .content h2{
+  font-size: 2rem;
+  color: black;
+}
+
+.packs .box-container .box .content h3{
+  font-size: 2rem;
+  color: var(--light-black);
+}
+
+
+.packs .box-container .box .content ul li{
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem 0;
+  line-height: 2;
+  margin-left: 2px;
+}

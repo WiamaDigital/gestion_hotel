@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* declaration des variables */
+:root {
+  --main-color: #4d8581;
+  --black: #222;
+  --white: #dbcbbe;
+  --light-black: #777;
+  --light-white: #fff9;
+  --darkk-bg: rgba(0, 0, 0, .7);
+  --light-bg: #eee7df;
+  --border: .1rem solid var(--black);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+  --light-turquois: #abded7;
+  --turquois: #61a0a0;
+  --turquois-grey: #9bc4cd;
+  --del-rio: #b0988e;
+  --brown: #8d6c64;
+  --body-color: #f8f6f3;
+
+}
+
+/*-------------------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.main_bg{
+    /* background-color: var(--turquois); */
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .7),
+      rgba(0, 0, 0, .7)),
+        url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.form{
+    width: 700px;
+    background-color: var(--light-bg);
+}
+
+.form-text{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.form-text h1{
+    color: var(--main-color);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main-form div{
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+}
+
+@media(max-width:735px){
+    .main-form{
+        text-align: center;
+    }
+    
+}
+
+.main-form div input{
+    width: 100%;
+    background: none;
+    border: 1px solid var(--main-color);
+    font-size: 20px;
+    color: var(--black);
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 100%;
+    background: none;
+    border: 1px solid var(--main-color);
+    font-size: 20px;
+    color: var(--black);
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+.main-form div span{
+    width: 100%;
+    color: var(--black);
+    font-size: 25px;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+}
+
+#submit input{
+    width: 200px;
+    border-radius: 10px;
+    transition: all .3s;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    /* background-color: var(--main-color); */
+}
+
+#submit input:hover{
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+#submit input:active{
+    font-size: 19px;
+    background-color: rgb(101, 129, 120);
+    color: #fff;
+}

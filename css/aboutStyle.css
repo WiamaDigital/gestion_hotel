@@ -1,0 +1,242 @@
+body {
+  background-color: var(--body-color);
+
+}
+
+.aboutImage {
+  margin: 0 auto 5rem;
+  width: 100%;
+  background: url(../images/about/aboutImage.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  cursor: context-menu;
+
+
+}
+
+.aboutImage .contenus {
+  text-align: center;
+}
+
+.aboutImage .contenus h3 {
+  color: transparent;
+  -webkit-text-stroke: .2rem var(--light-white);
+  font-size: 5vw;
+
+}
+
+.aboutImage .contenus p {
+  max-width:  90rem;
+  margin: 1rem auto;
+  font-size: 1.2vw;
+  color: #ffffffd2;
+  line-height: 2;
+  font-weight: bold;
+  text-transform: initial;
+  border-radius: 40%;
+}
+
+.aboutImage .contenus p:hover{
+  font-size: 1.4vw;
+}
+
+.aboutContainer {
+  max-width: 85%;
+  margin: 10px auto;
+  padding: 20px;
+  background: #f7f7f796;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+
+}
+
+.aboutContainer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.aboutContainer h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+
+
+}
+
+.aboutContainer p {
+  line-height: 2;
+  font-size: 13px;
+  text-transform: initial;
+  text-align: justify;
+}
+
+.aboutContainer img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 45%;
+  float: left;
+  shape-outside: margin-box;
+  margin: 0 30px 5px 0;
+  object-position: center;
+}
+
+.aboutServices {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.heading-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+
+}
+
+.aboutServices .text {
+  width: 95%;
+  margin: .9rem auto;
+
+}
+
+.aboutServices .text p {
+  text-align: center;
+  line-height: 2.4;
+  font-size: 1.5rem;
+  text-transform: initial;
+
+
+}
+
+.aboutServices .box-contenus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+
+.aboutServices .box-contenus .sous-box {
+  padding: 1.5rem 4rem 1.5rem 0;
+  display: flex;
+  background: #ffffffa1;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+  transition: .8s;
+  cursor: context-menu;
+}
+
+.aboutServices .box-contenus .sous-box:hover {
+  background: #c6dfdd46;
+  transform: translateY(-10px);
+}
+
+.aboutServices .box-contenus .sous-box img {
+  width: 45px;
+  height: 45px;
+  margin: 0 3.5rem 0 3rem;
+}
+
+.aboutServices .box-contenus .sous-box h3 {
+  font-size: 13px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*-----------------------------------------------*/
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  flex-direction: column;
+  width: 90%;
+  cursor: context-menu;
+}
+.contactInfo .text{
+  width: 80%;
+  margin: 10px auto;
+  
+}
+.contactInfo .text p{
+  text-align: center;
+  line-height: 2;
+  font-size: 1.5rem;
+  text-transform: initial;
+
+}
+.contactDetail{
+  text-align: center;
+  line-height: 2.5;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.63);
+}
+.contactDetail span:first-child {
+  color: var(--main-color);
+  font-weight: 500;
+  font-style: italic;
+}
+.contactDetail span:last-child:hover{
+  font-size: 1.9rem;
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 550px) {
+
+  .aboutServices .heading-title {
+    font-size: 2.6rem;
+  
+  }
+  .aboutServices .text p {
+    line-height: 2;
+    font-size: 1.4rem;
+  
+  
+  }
+
+}
+
+@media (max-width : 500px) {
+  .aboutContainer img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10%;
+    float: right;
+    margin: 0 0 30px;
+
+  }
+  .aboutServices .heading-title {
+    font-size: 2.8rem;
+  
+  }
+  .aboutContainer p {
+    line-height: 1.5;
+    text-align: center;
+  }
+}
